@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src=""></script>
+</head>
+<body>
+    <div id="container">
+        <div>
+            
+            <span id="ques1"></span>
+        </div>
+        <div>
+            <input type="radio" id="opt1">
+            <span id="ans1"></span>
+        </div>
+        <div>
+            <input type="radio" id="opt2">
+            <span id="ans2"></span>
+        </div>
+        <div>
+            <input type="radio" id="opt3">
+            <span id="ans3"></span>
+        </div>
+        <div>
+            <input type="radio" id="opt4">
+            <span id="ans4"></span>
+        </div>
+        <div>
+            <button onclick=""></button>
+        </div>
+    </div>
+
+    <script>
+        var index = 0;
+        function answer(index){
+            document.getElementById('ques1').innerHTML=jsonData[index].q;
+            document.getElementById('ans1').innerHTML=jsonData[index].ans1;
+            document.getElementById('ans2').innerHTML=jsonData[index].ans2;
+            document.getElementById('ans3').innerHTML=jsonData[index].ans3;
+            document.getElementById('ans4').innerHTML=jsonData[index].ans4;
+
+
+        }
+    </script>
+</body>
+</html>
